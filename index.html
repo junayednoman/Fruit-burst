@@ -1,11 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Burst</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Burst</title>
+  <!-- fonts google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- tailwind and daisy linking -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      color: rgba(18, 18, 18, 0.60);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
+      /* 162.5% */
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #121212;
+      font-size: 48px;
+      font-weight: 800 !important;
+      line-height: 55px;
+    }
+
+    .color_pink {
+      color: #F85559;
+    }
+
+    .bg_pink {
+      background-color: #F85559;
+    }
+  </style>
 </head>
+
 <body>
-    
+  <!-- header start -->
+  <header></header>
+
+  <!-- main start -->
+  <main>
+    <!-- banner start -->
+    <div class="container mx-auto">
+      <div
+        style="border-radius: 8px; background-image: url(images/banner.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <div class="mx-auto md:pt-[80px] md:pb-[200px]" style="
+            background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);">
+          <div class="hero-content mx-auto text-center mt-[50px] text-neutral-content">
+            <!-- slider start -->
+            <div class="w-full">
+
+              <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full flex-col flex-col">
+                  <h1 class="text-7xl text-white leading-tight">Exotic tastes at your <br> doorstep</h1>
+                  <p class="pt-6 pb-8">We supply highly quality organic products</p>
+                  <button class="mx-auto py-[17px] w-[140px] text-white border-0 bg_pink text-[18px] rounded-[5px]">Shop
+                    Now</button>>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full flex-col">
+                  <h1 class="text-7xl text-white leading-tight">Exotic tastes at your <br> doorstep</h1>
+                  <p class="pt-6 pb-8">We supply highly quality organic products</p>
+                  <button class="mx-auto py-[17px] w-[140px] text-white border-0 bg_pink text-[18px] rounded-[5px]">Shop
+                    Now</button>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full flex-col">
+                  <h1 class="text-7xl text-white leading-tight">Exotic tastes at your <br> doorstep</h1>
+                  <p class="pt-6 pb-8">We supply highly quality organic products</p>
+                  <button class="mx-auto py-[17px] w-[140px] text-white border-0 bg_pink text-[18px] rounded-[5px]">Shop
+                    Now</button>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full flex-col">
+                  <h1 class="text-7xl text-white leading-tight">Exotic tastes at your <br> doorstep</h1>
+                  <p class="pt-6 pb-8">We supply highly quality organic products</p>
+                  <button class="mx-auto py-[17px] w-[140px] text-white border-0 bg_pink text-[18px] rounded-[5px]">Shop
+                    Now</button>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- slider end -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- deal of the day start -->
+    <div class="container mx-auto  py-[120px]">
+      <!-- deal top start -->
+      <div class="flex flex-row items-center justify-between">
+        <div>
+          <h2 class="text-[48px] mb-6">Deal of the day</h2>
+          <p">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin
+            literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div>
+          <div class="flex flex-row items-center">
+
+            <div class="text-center mt-[50px] px-6">
+              <h4 class="text-[48px] mb-2">29</h4>
+              <p>Days</p>
+            </div>
+
+            <div class="text-center mt-[50px] px-6"
+              style="border: 3px #121212 dotted; border-top: 0; border-bottom: 0;">
+              <h4 class="text-[48px] mb-2">15</h4>
+              <p>Hours</p>
+            </div>
+
+            <div class="text-center mt-[50px] px-6" style="border-right: 3px dotted #000;">
+              <h4 class="text-[48px] mb-2">25</h4>
+              <p>Minutes</p>
+            </div>
+
+            <div class="text-center mt-[50px] px-6">
+              <h4 class="text-[48px] mb-2">08</h4>
+              <p>Seconds</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- deal top end -->
+      <!-- deal cards start -->
+      <div class="flex flex-row justify-between gap-6">
+        <div class="text-center mt-[50px] py-[50px] px-[70px] w-full rounded-lg"
+          style="border: 1px solid rgba(18, 18, 18, 0.10);">
+          <img src="images/apple.png" alt="apple" class="w-[100px] mx-auto mb-6">
+          <h5 class="font-bold" style="border-bottom: 1px solid rgba(18, 18, 18, 0.10);">12.90$ - 18.85$</h5>
+          <p class="py-6">Apples</p>
+          <img src="images/stars.svg" alt="star" class="mb-6">
+          <a href="#" class="color_pink">Details</a>
+        </div>
+
+        <div class="text-center mt-[50px] py-[50px] px-[70px] w-full rounded-lg"
+          style="border: 1px solid rgba(18, 18, 18, 0.10);">
+          <img src="images/orrange.png" alt="apple" class="w-[110px] mx-auto mb-6">
+          <h5 class="font-bold" style="border-bottom: 1px solid rgba(18, 18, 18, 0.10);">12.90$ - 18.85$</h5>
+          <p class="py-6">Orange</p>
+          <img src="images/stars.svg" alt="star" class="mb-6">
+          <a href="#" class="color_pink">Details</a>
+        </div>
+
+        <div class="text-center mt-[50px] py-[50px] px-[70px] w-full rounded-lg"
+          style="border: 1px solid rgba(18, 18, 18, 0.10);">
+          <img src="images/dragon.png" alt="apple" class="w-[110px] mx-auto mb-6">
+          <h5 class="font-bold" style="border-bottom: 1px solid rgba(18, 18, 18, 0.10);">12.90$ - 18.85$</h5>
+          <p class="py-6">Dragon</p>
+          <img src="images/stars.svg" alt="star" class="mb-6">
+          <a href="#" class="color_pink">Details</a>
+        </div>
+
+        <div class="text-center mt-[50px] py-[50px] px-[70px] w-full rounded-lg"
+          style="border: 1px solid rgba(18, 18, 18, 0.10);">
+          <img src="images/bannana.png" alt="apple" class="w-[110px] mx-auto mb-6">
+          <h5 class="font-bold" style="border-bottom: 1px solid rgba(18, 18, 18, 0.10);">12.90$ - 18.85$</h5>
+          <p class="py-6">Banana</p>
+          <img src="images/stars.svg" alt="star" class="mb-6">
+          <a href="#" class="color_pink">Details</a>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <button class=" py-[17px] px-[30px] text-white bg_pink text-[18px] rounded-[5px]">Shop All</button>
+      </div>
+      <!-- deal cards end -->
+    </div>
+    <!-- deal of the day end -->
+
+    <!-- team start -->
+    <div class="container mx-auto">
+      <div class=" rounded-lg"
+        style="background-image: url(images/team.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="py-[120px] text-center" style="border-radius: 8px;
+            background: rgba(18, 18, 18, 0.70);">
+
+          <h2 class="text-[48px] mb-6 text-white">Deal of the day</h2>
+          <p class="text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of
+            classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          <!-- team items start -->
+          <div class="flex flex-row gap-[100px] px-[230px] mt-14 justify-center">
+            <div class="text-white">
+              <img src="images/team-1.png" alt="team">
+              <h4 class="text-6 leading-7 text-white mt-6">Awlad Hossain</h4>
+              <p class="">Fruits Expert</p>
+              <ul class="flex flex-row gap-3 text-center justify-center mt-4">
+                <li><a href="#"><img src="images/facebook 1.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/twitter (1) 1.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/linkedin 1.svg" alt="facebook"></a></li>
+              </ul>
+            </div>
+
+            <div class="text-white">
+              <img src="images/team-2.png" alt="team">
+              <h4 class="text-6 leading-7 text-white mt-6">Rokib Hossain</h4>
+              <p class="">Fruits Expert</p>
+              <ul class="flex flex-row gap-3 text-center justify-center mt-4">
+                <li><a href="#"><img src="images/facebook 1.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/twitter (1) 1.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/linkedin 1.svg" alt="facebook"></a></li>
+              </ul>
+            </div>
+
+            <div class="text-white">
+              <img src="images/team-1.png" alt="team">
+              <h4 class="text-6 leading-7 text-white mt-6">Awlad Hossain</h4>
+              <p class="">Fruits Expert</p>
+              <ul class="flex flex-row gap-3 text-center justify-center mt-4">
+                <li><a href="#"><img src="images/facebook 1.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/twitter (1) 1.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/linkedin 1.svg" alt="facebook"></a></li>
+              </ul>
+            </div>
+
+            <div class="text-white">
+              <img src="images/team-2.png" alt="team">
+              <h4 class="text-6 leading-7 text-white mt-6">Rokib Hossain</h4>
+              <p class="">Fruits Expert</p>
+              <ul class="flex flex-row gap-3 text-center justify-center mt-4">
+                <li><a href="#"><img src="images/facebook 1.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/twitter (1) 1.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/linkedin 1.svg" alt="facebook"></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- team items end -->
+        </div>
+      </div>
+    </div>
+    <!-- team end -->
+  </main>
+
+  <!-- footer start -->
+  <footer class="py-[140px] bg-[#121212] mt-[140px]">
+    <div class="container mx-auto text-center">
+      <div class="text-center">
+        <img src="images/logo.png" alt="logo" class="mx-auto mb-14">
+      </div>
+      <ul class="flex flex-row justify-center text-white gap-12">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">All Fruits</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">My Account</a></li>
+      </ul>
+      <ul class="flex flex-row justify-center text-white gap-6 mt-[65px]">
+        <li><a href="#"><img src="images/linkedin.svg" alt="linkedin"></a></li>
+        <li><a href="#"><img src="images/instagram 1.svg" alt="instagram"></a></li>
+        <li><a href="#"><img src="images/apple 1.svg" alt="apple"></a></li>
+      </ul>
+    </div>
+  </footer>
+
 </body>
+
 </html>
