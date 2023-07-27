@@ -254,7 +254,7 @@
           <h5 class="font-bold" style="border-bottom: 1px solid rgba(18, 18, 18, 0.10);">12.90$ - 18.85$</h5>
           <p class="py-6">Apples</p>
           <img src="images/stars.svg" alt="star" class="mb-6 mx-auto">
-          <a href="#" class="color_pink">Details</a>
+          <button class="color_pink" onclick="my_modal_1.showModal()">Details</button>
         </div>
 
         <div class="text-center md:mt-[50px] py-[50px] px-[70px] w-full rounded-lg"
@@ -263,7 +263,7 @@
           <h5 class="font-bold" style="border-bottom: 1px solid rgba(18, 18, 18, 0.10);">12.90$ - 18.85$</h5>
           <p class="py-6">Orange</p>
           <img src="images/stars.svg" alt="star" class="mb-6 mx-auto">
-          <a href="#" class="color_pink">Details</a>
+          <button class="color_pink" onclick="my_modal_2.showModal()">Details</button>
         </div>
 
         <div class="text-center lg:mt-[50px] py-[50px] px-[70px] w-full rounded-lg"
@@ -272,7 +272,7 @@
           <h5 class="font-bold" style="border-bottom: 1px solid rgba(18, 18, 18, 0.10);">12.90$ - 18.85$</h5>
           <p class="py-6">Dragon</p>
           <img src="images/stars.svg" alt="star" class="mb-6 mx-auto">
-          <a href="#" class="color_pink">Details</a>
+          <button class="color_pink" onclick="my_modal_3.showModal()">Details</button>
         </div>
 
         <div class="text-center lg:mt-[50px] py-[50px] px-[70px] w-full rounded-lg"
@@ -281,7 +281,7 @@
           <h5 class="font-bold" style="border-bottom: 1px solid rgba(18, 18, 18, 0.10);">12.90$ - 18.85$</h5>
           <p class="py-6">Banana</p>
           <img src="images/stars.svg" alt="star" class="mb-6 mx-auto">
-          <a href="#" class="color_pink">Details</a>
+          <button class="color_pink" onclick="my_modal_4.showModal()">Details</button>
         </div>
       </div>
       <div class="text-center mt-12">
@@ -375,6 +375,66 @@
       </ul>
     </div>
   </footer>
+
+
+<!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_1" class="modal text-center">
+  <form method="dialog" class="modal-box p-[40px]">
+    <img src="images/apple.png" alt="" class="mx-auto md:mb-4 mb-4 md:w-[150px] w-[40%]">
+    <h3 class="font-bold text-lg">Apples!</h3>
+    <p class="md:pb-6 md:pt-4 pt-2 pb-4">Professional employees are there for you to pick the most <br class="md:block hidden"> amazing and fresh fruits.</p>
+    <img src="images/star.png" alt="" class="mx-auto w-[200px] md:mb-[40px] mb-7">
+    <div class="modal-action justify-center md:gap-4 gap-[1px]">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="md:py-[14px] md:px-[30px] text-white md:text-[18px] text-[15px] rounded-[5px] py-[5px] px-4" style="border: 1px solid #F85559; color: #F85559;">Close</button>
+      <a href="#" class="md:py-[14px] md:px-[30px] text-white bg_pink md:text-[18px] text-[15px] rounded-[5px] py-[5px] px-4">Buy Now</a>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="my_modal_2" class="modal text-center">
+  <form method="dialog" class="modal-box p-[40px]">
+    <img src="images/orrange.png" alt="" class="mx-auto md:mb-1 mb-4 md:w-[170px] w-[40%]">
+    <h3 class="font-bold text-lg">Orange!</h3>
+    <p class="md:pb-6 md:pt-4 pt-2 pb-4">Professional employees are there for you to pick the most <br class="md:block hidden"> amazing and fresh fruits.</p>
+    <img src="images/star.png" alt="" class="mx-auto w-[200px] md:mb-[40px] mb-7">
+    <div class="modal-action justify-center md:gap-4 gap-[1px]">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="md:py-[14px] md:px-[30px] text-white md:text-[18px] text-[15px] rounded-[5px] py-[5px] px-4" style="border: 1px solid #F85559; color: #F85559;">Close</button>
+      <a href="#" class="md:py-[14px] md:px-[30px] text-white bg_pink md:text-[18px] text-[15px] rounded-[5px] py-[5px] px-4">Buy Now</a>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="my_modal_3" class="modal text-center">
+  <form method="dialog" class="modal-box p-[40px]">
+    <img src="images/dragon.png" alt="" class="mx-auto md:mb-2 mb-4 md:w-[170px] w-[40%]">
+    <h3 class="font-bold text-lg">Dragon</h3>
+    <p class="md:pb-6 md:pt-4 pt-2 pb-4">Professional employees are there for you to pick the most <br class="md:block hidden"> amazing and fresh fruits.</p>
+    <img src="images/star.png" alt="" class="mx-auto w-[200px] md:mb-[40px] mb-7">
+    <div class="modal-action justify-center md:gap-4 gap-[1px]">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="md:py-[14px] md:px-[30px] text-white md:text-[18px] text-[15px] rounded-[5px] py-[5px] px-4" style="border: 1px solid #F85559; color: #F85559;">Close</button>
+      <a href="#" class="md:py-[14px] md:px-[30px] text-white bg_pink md:text-[18px] text-[15px] rounded-[5px] py-[5px] px-4">Buy Now</a>
+    </div>
+  </form>
+</dialog>
+
+
+<dialog id="my_modal_4" class="modal text-center">
+  <form method="dialog" class="modal-box p-[40px]">
+    <img src="images/bannana.png" alt="" class="mx-auto md:mb-1 mb-4 md:w-[170px] w-[40%]">
+    <h3 class="font-bold text-lg">Banana!</h3>
+    <p class="md:pb-6 md:pt-4 pt-2 pb-4">Professional employees are there for you to pick the most <br class="md:block hidden"> amazing and fresh fruits.</p>
+    <img src="images/star.png" alt="" class="mx-auto w-[200px] md:mb-[40px] mb-7">
+    <div class="modal-action justify-center md:gap-4 gap-[1px]">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="md:py-[14px] md:px-[30px] text-white md:text-[18px] text-[15px] rounded-[5px] py-[5px] px-4" style="border: 1px solid #F85559; color: #F85559;">Close</button>
+      <a href="#" class="md:py-[14px] md:px-[30px] text-white bg_pink md:text-[18px] text-[15px] rounded-[5px] py-[5px] px-4">Buy Now</a>
+    </div>
+  </form>
+</dialog>
 
 </body>
 
